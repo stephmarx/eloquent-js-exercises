@@ -29,3 +29,5 @@ ancestry.forEach(function(person){
 });
 
 console.log(average(allAgeDifferences));
+
+// Another great solution here: https://gist.github.com/spamwax/99f1a2d9f21ed463d157
