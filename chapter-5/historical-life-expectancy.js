@@ -1,3 +1,5 @@
+// My solution for "Historical Life Expectancy", found at http://eloquentjavascript.net/05_higher_order.html#p_ENbLeUYppS
+
 // Provided function
 
 function average(array) {
