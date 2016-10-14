@@ -1,25 +1,17 @@
-// Not a big fan of this solution, as there's no way to break a forEach loop in Javascript. This doesn't break as soon as it finds an exception.
-
 function every(array, func){
-  var toReturn = true;
-  array.forEach(function(n){
-    if (func(n) == false){
-      toReturn = false; 
-      return;
+  for (var n=0; n<array.length; n++){
+    if (!(func(array[n]))) {
+      return false;
     }
-  })
-                
-  return toReturn;
+  }
+  return true;
 }
 
 function some(array, func){
-  var toReturn = false;
-  array.forEach(function(n){
-    if (func(n) == true){
-      toReturn = true;
-      return;
+  for (var n=0; n<array.length; n++){
+    if (func(array[n])) {
+      return true;
     }
-  })
-  
-  return toReturn;
+  }
+  return false;
 }
